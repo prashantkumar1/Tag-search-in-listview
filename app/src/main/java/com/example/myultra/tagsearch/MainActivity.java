@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listview= (ListView) findViewById(R.id.list);
         searchtext=(EditText) findViewById(R.id.editText1);
 
+// DATA 
         String[] values = new String[] { "Android List View",
                 "Adapter implementation",
                 "Simple List View In Android",
@@ -37,8 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 "List View Array Adapter",
                 "Android Example List View"   };
 
+// DATA ADDED IN LISTVIEW 
         final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listview.setAdapter(adapter);
+        
+        // ON THE CLICK OF ANY LIST
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
