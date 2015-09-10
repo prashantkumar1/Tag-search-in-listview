@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listview.setAdapter(adapter);
         
-        // ON THE CLICK OF ANY LIST
+    // as we type search will be done on the data
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
